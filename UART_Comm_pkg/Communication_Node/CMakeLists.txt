@@ -70,3 +70,9 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
 
     # Add user defined libraries
 )
+# 开启编译器点运算
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -mfloat-abi=soft")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mfloat-abi=soft")
+
+# 使能printf相关函数支持浮点数
+target_link_options(${CMAKE_PROJECT_NAME} PRIVATE -u _printf_float)
