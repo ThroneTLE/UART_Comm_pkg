@@ -1,7 +1,7 @@
 <component name="DebugServers">
-  <stlink-debug-target name="ST-LINK" uniqueID="1c187ab4-9ad7-4771-9135-336b5adf7794" selected="true">
+  <stlink-debug-target name="ST-LINK" uniqueID="8162c819-5d93-479a-85bc-0a93bee1f592" selected="true">
     <debugger version="1">
-      <debugger kind="GDB" isBundled="true" />
+      <debugger toolchainName="STM32" />
       <env />
     </debugger>
     <gdbserver exe="e:\ST\STM32CubeCLT_1.18.0\STLink-gdb-server\bin\ST-LINK_gdbserver.exe" programmer="e:\ST\STM32CubeCLT_1.18.0\STM32CubeProgrammer\bin" />
